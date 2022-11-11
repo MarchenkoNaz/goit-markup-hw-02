@@ -22,28 +22,31 @@
   --link-text-color: rgba(255, 255, 255, 0.6);
   --button-text-color: #212121;
 
-	--border-color:#EEEEEE;
+  --primary-font-size: 14px;
+  --primary-letter-spacing: 0.03em;
+  --secondary-letter-spacing: 0.06em;
+
+  --border-color: #eeeeee;
 
   --hover-focus-color: #2196f3;
 
   --primary-background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
   --footer-hero-background-color: #2f303a;
-	--button-background-color:#F5F4FA;
+  --button-background-color: #f5f4fa;
   --active-button-background-color: #2196f3;
-
 }
 
 /* #body */
-.site-link.common{
-	color: #2196f3;
+.site-link.common {
+  color: #2196f3;
 }
 
 body {
-	background-color: var(--primary-background-color);
+  background-color: var(--primary-background-color);
   font-family: "Roboto", sans-serif;
   color: var(--primary-text-color);
-  letter-spacing: 0.03em;
+  letter-spacing: var(--primary-letter-spacing);
 }
 
 /* #logo */
@@ -69,7 +72,7 @@ body {
 .site-nav {
   list-style: none;
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--primary-font-size);
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -87,7 +90,7 @@ body {
 /* #contacts in nav */
 .contacts-nav {
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--primary-font-size);
   line-height: 1.14;
   letter-spacing: 0.02em;
   list-style: none;
@@ -114,17 +117,19 @@ body {
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: var(--secondary-letter-spacing);
   text-transform: uppercase;
 }
 
 .button {
+  cursor: pointer;
   font-weight: 700;
   line-height: 1.88;
   text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: var(--secondary-letter-spacing);
   color: #ffffff;
   background-color: var(--active-button-background-color);
+  border: none;
 }
 
 /* #section benefits */
@@ -138,14 +143,14 @@ body {
 
 .h3-benefits {
   font-weight: 700;
-  font-size: 14px;
+  font-size: var(--primary-font-size);
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-text-color);
 }
 
 .text-benefits {
-  font-size: 14px;
+  font-size: var(--primary-font-size);
   line-height: 1.71;
 }
 
@@ -160,6 +165,9 @@ body {
 
 .list-services {
   list-style: none;
+}
+.list-item {
+  margin: 10px;
 }
 
 /* #section our team */
@@ -202,7 +210,7 @@ body {
 }
 .maplink {
   text-decoration: none;
-  font-size: 14px;
+  font-size: var(--primary-font-size);
   line-height: 1.71;
   color: var(--secondary-text-color);
 }
@@ -212,7 +220,7 @@ body {
 }
 .footer .contactlink {
   font-weight: 400;
-  font-size: 14px;
+  font-size: var(--primary-font-size);
   line-height: 1.71;
   color: var(--link-text-color);
 }
@@ -221,51 +229,47 @@ body {
   color: var(--hover-focus-color);
 }
 
-
 /* !PORTFOLIO.HTML */
 
-
 /* #main */
-.filters{
-	list-style: none;
+.filters {
+  list-style: none;
 }
-.filter-button{
-	font-family: 'Roboto',sans-serif;
-	font-weight: 500;
-	line-height: 1.62;
-	text-align: center;
-	cursor: pointer;
-	background-color: var(--button-background-color);
-	color: var(--button-text-color);
-	border: none;
+.filter-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 1.62;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  border: none;
 }
 .filter-button:hover,
-.filter-button:focus{
-	background-color: var(--active-button-background-color);
-	color: var(--secondary-text-color);
+.filter-button:focus {
+  background-color: var(--active-button-background-color);
+  color: var(--secondary-text-color);
 }
-.cards{
-	list-style: none;
-	text-decoration: none;
-
+.cards {
+  list-style: none;
+  text-decoration: none;
 }
-.cards-item{
-	border:1px solid var(--border-color) ;
-	width: 370px;
-	margin-bottom: 5px;
+.cards-item {
+  border: 1px solid var(--border-color);
+  width: 370px;
+  margin-bottom: 5px;
 }
-.cards-link{
-	text-decoration: none;
-	color:var(--primary-text-color) ;
-
+.cards-link {
+  text-decoration: none;
+  color: var(--primary-text-color);
 }
-.cards-title{
-	color: var(--title-text-color);
-	font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
+.cards-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: var(--secondary-letter-spacing);
 }
-.card-description{
-	line-height:1.88;
+.card-description {
+  line-height: 1.88;
 }
