@@ -49,6 +49,10 @@ body {
   letter-spacing: var(--primary-letter-spacing);
 }
 
+/* #header */
+.portfolio-header {
+  border-bottom: 1px solid #ececec;
+}
 /* #logo */
 .logo {
   font-family: "Raleway", sans-serif;
