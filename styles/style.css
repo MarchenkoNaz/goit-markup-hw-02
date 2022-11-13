@@ -21,6 +21,7 @@
   --secondary-text-color: #ffffff;
   --link-text-color: rgba(255, 255, 255, 0.6);
   --button-text-color: #212121;
+  --font-text-color: #000000;
 
   --primary-font-size: 14px;
   --primary-letter-spacing: 0.03em;
@@ -39,14 +40,14 @@
 
 /* #body */
 .site-link.common {
-  color: #2196f3;
+  color: var(--hover-focus-color);
 }
 
 body {
   background-color: var(--primary-background-color);
   font-family: "Roboto", sans-serif;
   color: var(--primary-text-color);
-  letter-spacing: var(--primary-letter-spacing);
+  letter-spacing: 0.03em;
 }
 
 /* #header */
@@ -60,7 +61,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  color: #000000;
+  color: var(--font-text-color);
 }
 
 .logo-span {
@@ -131,7 +132,7 @@ body {
   line-height: 1.88;
   text-align: center;
   letter-spacing: var(--secondary-letter-spacing);
-  color: #ffffff;
+  color: var(--secondary-text-color);
   background-color: var(--active-button-background-color);
   border: none;
   border-radius: 4px;
@@ -147,7 +148,7 @@ body {
   width: 270px;
 }
 
-.h3-benefits {
+.benefits-title {
   font-weight: 700;
   font-size: var(--primary-font-size);
   line-height: 1.14;
@@ -199,7 +200,9 @@ body {
   line-height: 1.19;
   text-align: center;
 }
-
+.card-background {
+  background-color: var(--secondary-text-color);
+}
 /* #footer */
 .footer {
   background-color: var(--footer-hero-background-color);
@@ -242,7 +245,8 @@ body {
   list-style: none;
 }
 .filter-button {
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
   text-align: center;
@@ -264,7 +268,6 @@ body {
 }
 .cards-item {
   border: 1px solid var(--border-color);
-  width: 370px;
   margin-bottom: 5px;
 }
 .cards-link {
@@ -280,4 +283,8 @@ body {
 }
 .card-description {
   line-height: 1.88;
+}
+
+address {
+  font-style: normal;
 }
